@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="menu">
+    <div class="nav">
+      <div class="logo">
+        <h1>Bur<b>giir</b></h1>
+      </div>
+      <ul>
+        <li><a class=active href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div>
+        <input class="signin" type="submit" value="Sign In" name="Signin">
+        <input class="signup" type="submit" value="Sign Up" name="Signup">
+      </div>
+    </div>
+  </section>
+  <section class="grid">
+    <div class="content">
+      <div class="content-left">
+        <div class="info">
+          <h2>Order Your Favorite <br>Burger Anytime</h2>
+          <p>Hey,Our delicious Burger is waiting for you,<br>
+            we are always near to you
+          </p>
+        </div>
+        <button>Explore</button>
+      </div>
+      <div class="content-right">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="burger1.png" alt=""></div>
+            <div class="swiper-slide"><img src="burger2.png" alt=""></div>
+            <div class="swiper-slide"><img src="burger3.png" alt=""></div>
+            
+          </div>
+        </div>
+        <!--<img src="burger1.png" alt="">-->
+      </div>
+      <div class="social-links">
+       <i class="fa fa-instagram"></i>
+       <i class="fa fa-facebook-f"></i>
+       <i class="fa fa-twitter"></i>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        
+      });
+    </script>
+  </section>
+</body>
+
+</html>
